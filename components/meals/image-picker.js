@@ -1,4 +1,4 @@
-"use client";
+'use client';
 
 import { useRef, useState } from "react";
 import Image from "next/image";
@@ -47,11 +47,11 @@ export default function ImagePicker({ label, name }) {
         <input
           className={classes.input}
           type="file"
-          id={name}
-          accept="image/png, image/jpeg"
-          name={name}
-          ref={imageInput}
-          onChange={handleImageChange}
+          id = {name}
+          accept = "image/png, image/jpeg"
+          name = {name}
+          ref = {imageInput}
+          onChange = {handleImageChange}
           required
         />
         <button
