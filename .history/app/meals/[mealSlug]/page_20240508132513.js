@@ -7,10 +7,6 @@ import classes from './page.module.css';
 //generate metadata for dynamic page
 export async function generateMetadata({params}){
   const meal = getMeal(params.mealSlug);
-
-  if (!meal) {
-    notFound();
-  }
   
   return {
     title: meal.title,

@@ -11,7 +11,6 @@ export async function generateMetadata({params}){
   if (!meal) {
     notFound();
   }
-  
   return {
     title: meal.title,
     description: meal.summary,
